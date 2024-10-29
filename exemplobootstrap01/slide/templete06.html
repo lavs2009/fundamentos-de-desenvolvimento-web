@@ -1,40 +1,75 @@
 <!DOCTYPE html>
-<html lang ="pt-br">
-    <head>
+<html lang="pt-br">
+
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta httrp-equiov="X-UA- Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap - Template 06</title>
-   <!--Incorporação do Bootstrap | CSS-->
- <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" 
-  rel="stylesheet">
+    <!-- Incorporação do Bootstrap | CSS-->
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
- <body>
-<div id="carrosel-de-imagens" class="carousel slide" 
-data-bs-ride="carousel">
 
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#carrosel-de-imagens"
-data-bs-slide-to="0" class="active"
-aria-current="true" aria-label="Slide 1">
-</button>
+<body>
+    <!-- Carrossel de imagens - um slider-->
+    <div id+="carrossel-de-imagem" class="carousel slide" data-bs-ride="carousel">
+        <!--traços marcadores-->
+        <div class="carousel-indicators">
+            <!-- Primiero marcador (ativo por padrão) -->
+            <button type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide-to="0" class="active"
+                aria-current=true aria-label=Slide 1></button>
+            <!-- Segundo marcador: link imagem 2 -->
+            <button type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide-to="1"
+                aria-label="Slide"></button>
+            <!-- Terceito marcadsor: link imagem 3 -->
+            <button type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- Bloco de imagens -->
+        <div class="carousel-inner">
+            <!-- imagem 1 +  legenda -->
+            <div class="carousel-item active">
+                <!-- imagem 1-->
+                <img src="img1.jpg" width="1080px" height="600px" class="d-block w=100" alt="leão">
+                <!-- legenda -->
+                <div class="carousel-caption d-nome d-md-block">
+                    <h5>IMAGEM 01</h5>
+                    <p> Exemplo de imagem</p>
+                </div>
+            </div>
+            <!-- imagem 2 + legenda -->
+            <div class="carousel-item">
+                <!-- imagem 2 -->
+                <img src="img2.jpg" widht="1080px" height="600px" class="d-block w-100" alt="cidade">
+                <!-- legenda -->
+                <div class="carousel-caption d-nome d-md-block">
+                    <h5>IMAGEM 02</h5>
+                    <p>Exemplo de imagem</p>
+                </div>
+            </div>
+            <!-- imagem 3 + legenda -->
+    <div class="carousel-item">
+                <!--IMAGEM 03 -->
+                <img src="img3.jpg" widht="1080px" height="600px" class="d-block w-100" alt="montanha">
+            </div>
+            <!-- legenda -->
+            <div class="carousel-caption d-nome d-md-block">
+                <h5>IMAGEM 03</h5>
+                <p>Exemplo de imagem</p>
+            </div>
+        </div>
+    </div><!-- /fim bloco de imaegens -->
 
-<button type="button" data-bs-target="#carrosel-de-imagens"
-data-bs-slide-to="1" 
-aria-current="true" aria-label="Slide 2">
-</button>
-
-<button type="button" data-bs-target="#carrosel-de-imagens"
-data-bs-slide-to="2" 
-aria-current="true" aria-label="Slide 3">
-</button>
-</div>
-<div class="carousel-inner">
-    <div class="carousel-item active">
-</div>
-</div>
-</div>
-<!--Incorporação Bootstrap | JS--> 
-<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap de navegação -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-nest" type="button" data-bs-target="carrossel-de-imagens" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+    </div>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
